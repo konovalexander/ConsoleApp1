@@ -19,6 +19,7 @@ namespace ConsoleApp1
             Console.WriteLine("test");
             Console.WriteLine("feature2");
             Console.WriteLine("feature1");
+            Console.WriteLine("new_branch");
         }
 
 
