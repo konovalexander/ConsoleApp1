@@ -11,6 +11,7 @@ namespace ConsoleApp1
         static void Show(string s)
         {
             Console.WriteLine(s);
+            Console.Write("\n");
         }
         
         static void Main(string[] args)
