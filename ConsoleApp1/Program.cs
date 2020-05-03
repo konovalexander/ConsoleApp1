@@ -16,8 +16,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("test");
-
             Console.WriteLine("feature2");
+            Console.WriteLine("feature1");
         }
 
 
