@@ -1,27 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static void Show(string s)
+        static int Main(string[] args)
         {
-            Console.WriteLine(s);
-            Console.Write("\n");
-        }
-        
-        static void Main(string[] args)
-        {
-            Console.WriteLine("test");
-            Console.WriteLine("feature2");
-            Console.WriteLine("feature1");
-            Console.WriteLine("new_branch");
-        }
 
+            Console.WriteLine("1 [C#], 2 [VB]");
+            Console.Write("Please, choose an option: ");
 
+            object userChoise = Console.ReadLine();
+            var choise = int.TryParse(userChoise.ToString(), out int c) ? c : userChoise;
+
+            switch (choise)
+            {
+                case int i when i == 2:
+                case string s when s.Equals("VB", StringComparison.OrdinalIgnoreCase):
+                    Console.WriteLine("Your choise is VB {0} {1}");
+                    break;
+               
+                case int i when i == 1:
+                case string s when s.Equals("C#", StringComparison.OrdinalIgnoreCase):
+                    Console.WriteLine("C#");
+                    break;
+
+                default:
+                    break;
+            }
+
+            
+
+            return -1;
+        }
     }
 }
