@@ -7,7 +7,7 @@ namespace ConsoleApp1
         static int Main(string[] args)
         {
 
-            Console.WriteLine("1 [C#], 2 [VB]");
+            Console.WriteLine("1 [One], 2 [Two]");
             Console.Write("Please, choose an option: ");
 
             object userChoise = Console.ReadLine();
@@ -16,13 +16,13 @@ namespace ConsoleApp1
             switch (choise)
             {
                 case int i when i == 2:
-                case string s when s.Equals("VB", StringComparison.OrdinalIgnoreCase):
-                    Console.WriteLine("Your choise is VB {0} {1}");
+                case string s when s.Equals("two", StringComparison.OrdinalIgnoreCase):
+                    Console.WriteLine("Your choise is Two");
                     break;
                
                 case int i when i == 1:
-                case string s when s.Equals("C#", StringComparison.OrdinalIgnoreCase):
-                    Console.WriteLine("C#");
+                case string s when s.Equals("One", StringComparison.OrdinalIgnoreCase):
+                    Console.WriteLine("Your choise is One");
                     break;
 
                 default:
